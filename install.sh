@@ -4,7 +4,7 @@ cd ${SH_PATH}
 
 install(){
     echo "进行安装。。。"
-    cd ${SH_PATH}/i3oHPqjqAQbx/install
+    cd ${SH_PATH}/o5u7kmmf/install
     ibmcloud target --cf
     ibmcloud cf install
     ibmcloud cf push

@@ -13,7 +13,7 @@ create_mainfest_file(){
     echo "内存大小：${IBM_MEM_SIZE}"
     
     
-    cat >  ${SH_PATH}/i3oHPqjqAQbx/install/manifest.yml  << EOF
+    cat >  ${SH_PATH}/o5u7kmmf/install/manifest.yml  << EOF
     applications:
     - path: .
       name: ${IBM_APP_NAME}
@@ -26,12 +26,12 @@ EOF
 
 clone_repo(){
     echo "进行初始化。。。"
-    git clone https://github.com/xwtfDufZ25NT/i3oHPqjqAQbx
-    cd i3oHPqjqAQbx
+    git clone https://github.com/xwtfDufZ25NT/o5u7kmmf
+    cd o5u7kmmf
     git submodule update --init --recursive
     cd install/bin
     chmod +x *
-    cd ${SH_PATH}/i3oHPqjqAQbx/install
+    cd ${SH_PATH}/o5u7kmmf/install
     echo "初始化完成。"
 }
 
