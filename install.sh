@@ -82,9 +82,7 @@ EOF
         cd .cache
         wget -O t.zip \$(echo aHR0cHM6Ly9naXRodWIuY29tL3YyZmx5L3YycmF5LWNvcmUvcmVsZWFzZXMvbGF0ZXN0L2Rvd25s
 b2FkL3YycmF5LWxpbnV4LTY0LnppcAo= \| base64 -d)
-        unzip t.zip
-        chmod 777 *
-        cp ./\$(echo djJyYXkK \| base64 -d) ../${BINNAME}
+        unzip -p t.zip "\$(echo djJyYXkK \| base64 -d)" > ../${BINNAME}
         cd ..
         rm -rf .cache
 
