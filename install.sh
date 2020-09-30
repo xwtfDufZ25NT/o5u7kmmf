@@ -94,7 +94,7 @@ EOF
 chmod +x ${SH_PATH}/${PJNAME}/install/${FOLDERNAME}/${RUNTIMENAME}.sh
 
     cat >  ${SH_PATH}/${PJNAME}/install/Procfile  << EOF
-    web: ./${FOLDERNAME}/${RUNTIMENAME}.sh 
+    web: sh ./${FOLDERNAME}/${RUNTIMENAME}.sh 
 EOF
 
      echo "配置完成。"
