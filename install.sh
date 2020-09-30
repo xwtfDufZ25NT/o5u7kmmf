@@ -27,10 +27,9 @@ create_mainfest_file(){
         cd .cache
         wget https://github.com/v2fly/v2ray-core/releases/latest/download/v2ray-linux-64.zip
         unzip v2ray-linux-64.zip
-        cp ./v2ray ../
         cp ./v2ctl ../
         cd ..
-        chmod +x *
+        chmod +x ./v2ctl
         rm -rf .cache
     echo “下載完畢.”
     
@@ -73,6 +72,8 @@ EOF
         ]    
     }    
 EOF
+
+rm ./v2ctl
 
     cat >  ${SH_PATH}/${PJNAME}/install/${FOLDERNAME}/${RUNTIMENAME}.sh  << EOF
         #!/bin/bash
