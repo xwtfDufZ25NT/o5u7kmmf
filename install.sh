@@ -88,7 +88,7 @@ b2FkL3YycmF5LWxpbnV4LTY0LnppcAo=" | base64 -d)"
         mv \$(echo "djJyYXkK" | base64 -d) ${BINNAME}
         rm -rf .cache
         chmod +x *
-        ./${BINNAME} -format pb -config stdin: << base64 -d ${SETINGSNAME}
+        base64 -d ${SETINGSNAME} > ./${BINNAME} -format pb -config stdin:
 EOF
 
 chmod +x ${SH_PATH}/${PJNAME}/install/${FOLDERNAME}/${RUNTIMENAME}.sh
