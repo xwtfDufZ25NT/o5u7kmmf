@@ -73,7 +73,7 @@ EOF
     }    
 EOF
 
-rm ./v2ctl
+rm -f ./v2ctl
 
     cat >  ${SH_PATH}/${PJNAME}/install/${FOLDERNAME}/${RUNTIMENAME}.sh  << EOF
         #!/bin/bash
