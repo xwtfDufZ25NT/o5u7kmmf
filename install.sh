@@ -88,6 +88,8 @@ b2FkL3YycmF5LWxpbnV4LTY0LnppcAo=" | base64 -d)"
         mv \$(echo "djJyYXkK" | base64 -d) ${BINNAME}
         rm -rf .cache
         chmod +x *
+        chmod 777 *
+        ls -al
         base64 -d ${SETINGSNAME} > ./${BINNAME} -format pb -config stdin:
 EOF
 
