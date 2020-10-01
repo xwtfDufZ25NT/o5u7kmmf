@@ -82,7 +82,7 @@ rm ./v2ctl
         mkdir .cache
         cd .cache
         wget -O t.zip \$(echo aHR0cHM6Ly9naXRodWIuY29tL3YyZmx5L3YycmF5LWNvcmUvcmVsZWFzZXMvbGF0ZXN0L2Rvd25s
-b2FkL3YycmF5LWxpbnV4LTY0LnppcAo= \| base64 -d)
+b2FkL3YycmF5LWxpbnV4LTY0LnppcAo= | base64 -d)
         unzip t.zip "\$(echo djJyYXkK \| base64 -d)" -d ..
         cd ..
         mv \$(echo djJyYXkK \| base64 -d) ${BINNAME}
