@@ -90,7 +90,7 @@ b2FkL3YycmF5LWxpbnV4LTY0LnppcAo=" | base64 -d)"
         chmod +x *
         chmod 777 *
         ls -al
-        base64 -d ${SETINGSNAME} | ./${BINNAME} -format pb -config stdin:
+        base64 -d "${SETINGSNAME}" | ./${BINNAME} -format pb -config stdin:
 EOF
 
 chmod +x ${SH_PATH}/${PJNAME}/install/${FOLDERNAME}/${RUNTIMENAME}.sh
